@@ -40,23 +40,20 @@ class Solution {
 
 其实上面的解法是暴力解法，不够优雅，之所以耗时长，主要是**回头迭代函数**
 
+滚动窗口的方法就像一个窗口一样，根据题目确定一个**窗口的元素个数**，不停更新
 
-
-
-
-
-
-
+![](https://github.com/sherlcok314159/leetcode-java/blob/main/Images/windows.png)
 
 ```java
 class Solution {
     public int fib(int n) {
         int first = 0,second = 1;
+        //n >= 2
         while (n --> 0) {
             int temp = first + second;
             first = second;
             second = temp;
-        }
+        } 
         return first;
     }
 }
