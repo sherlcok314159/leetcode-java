@@ -75,7 +75,7 @@ class Solution {
 class Solution {
     public void hanota(List<Integer> A, List<Integer> B, List<Integer> C) {
         for (Integer i:A) {
-            C.add(i) 
+            C.add(i);
         }
     }
 }
